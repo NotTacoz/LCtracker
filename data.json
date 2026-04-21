@@ -1,0 +1,77 @@
+{
+  "lastUpdated": "2026-04-21T04:01:37Z",
+  "users": [
+    {
+      "username": "votrubac",
+      "totalSolved": 3822,
+      "easySolved": 931,
+      "mediumSolved": 2003,
+      "hardSolved": 888,
+      "streak": 4,
+      "dailySolved": 0,
+      "weeklySolved": 0,
+      "weeklyDelta": 0,
+      "totalDelta": 0
+    },
+    {
+      "username": "DBabichev",
+      "totalSolved": 2317,
+      "easySolved": 504,
+      "mediumSolved": 1230,
+      "hardSolved": 583,
+      "streak": 49,
+      "dailySolved": 0,
+      "weeklySolved": 6,
+      "weeklyDelta": -3,
+      "totalDelta": 0
+    },
+    {
+      "username": "lee215",
+      "totalSolved": 630,
+      "easySolved": 122,
+      "mediumSolved": 372,
+      "hardSolved": 136,
+      "streak": 2,
+      "dailySolved": 0,
+      "weeklySolved": 2,
+      "weeklyDelta": 2,
+      "totalDelta": 0
+    },
+    {
+      "username": "neal_wu",
+      "totalSolved": 253,
+      "easySolved": 60,
+      "mediumSolved": 141,
+      "hardSolved": 52,
+      "streak": 0,
+      "dailySolved": 0,
+      "weeklySolved": 0,
+      "weeklyDelta": 0,
+      "totalDelta": 0
+    },
+    {
+      "username": "errichto",
+      "totalSolved": 228,
+      "easySolved": 64,
+      "mediumSolved": 120,
+      "hardSolved": 44,
+      "streak": 0,
+      "dailySolved": 0,
+      "weeklySolved": 0,
+      "weeklyDelta": 0,
+      "totalDelta": 0
+    },
+    {
+      "username": "neetcode",
+      "totalSolved": 205,
+      "easySolved": 103,
+      "mediumSolved": 98,
+      "hardSolved": 4,
+      "streak": 0,
+      "dailySolved": 0,
+      "weeklySolved": 0,
+      "weeklyDelta": 0,
+      "totalDelta": 0
+    }
+  ]
+}

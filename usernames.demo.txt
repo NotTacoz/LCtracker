@@ -1,0 +1,10 @@
+# Demo / reference users — real LC accounts, always fetched.
+# These show up on the leaderboard by default and can be hidden
+# via the toggle in the UI. Useful to show what the board looks
+# like before your crew has racked up numbers.
+votrubac
+DBabichev
+lee215
+neal_wu
+errichto
+neetcode

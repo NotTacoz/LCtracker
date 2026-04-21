@@ -1,0 +1,4 @@
+# LC Grind — roster
+# One LeetCode username per line.
+# Lines starting with # are ignored.
+tcoz
