@@ -1,5 +1,31 @@
 {
-  "lastUpdated": "2026-04-21T04:01:37Z",
+  "lastUpdated": "2026-04-21T04:13:49Z",
+  "snapshots": {
+    "week": {
+      "date": "2026-04-21T04:13:49Z",
+      "ranks": {
+        "votrubac": 1,
+        "DBabichev": 2,
+        "lee215": 3,
+        "neal_wu": 4,
+        "errichto": 5,
+        "neetcode": 6,
+        "tcoz": 7
+      }
+    },
+    "month": {
+      "date": "2026-04-21T04:13:49Z",
+      "ranks": {
+        "votrubac": 1,
+        "DBabichev": 2,
+        "lee215": 3,
+        "neal_wu": 4,
+        "errichto": 5,
+        "neetcode": 6,
+        "tcoz": 7
+      }
+    }
+  },
   "users": [
     {
       "username": "votrubac",
@@ -11,7 +37,10 @@
       "dailySolved": 0,
       "weeklySolved": 0,
       "weeklyDelta": 0,
-      "totalDelta": 0
+      "totalDelta": 0,
+      "demo": true,
+      "rankDeltaWeek": 0,
+      "rankDeltaMonth": 0
     },
     {
       "username": "DBabichev",
@@ -23,7 +52,10 @@
       "dailySolved": 0,
       "weeklySolved": 6,
       "weeklyDelta": -3,
-      "totalDelta": 0
+      "totalDelta": 0,
+      "demo": true,
+      "rankDeltaWeek": 0,
+      "rankDeltaMonth": 0
     },
     {
       "username": "lee215",
@@ -35,7 +67,10 @@
       "dailySolved": 0,
       "weeklySolved": 2,
       "weeklyDelta": 2,
-      "totalDelta": 0
+      "totalDelta": 0,
+      "demo": true,
+      "rankDeltaWeek": 0,
+      "rankDeltaMonth": 0
     },
     {
       "username": "neal_wu",
@@ -47,7 +82,10 @@
       "dailySolved": 0,
       "weeklySolved": 0,
       "weeklyDelta": 0,
-      "totalDelta": 0
+      "totalDelta": 0,
+      "demo": true,
+      "rankDeltaWeek": 0,
+      "rankDeltaMonth": 0
     },
     {
       "username": "errichto",
@@ -59,7 +97,10 @@
       "dailySolved": 0,
       "weeklySolved": 0,
       "weeklyDelta": 0,
-      "totalDelta": 0
+      "totalDelta": 0,
+      "demo": true,
+      "rankDeltaWeek": 0,
+      "rankDeltaMonth": 0
     },
     {
       "username": "neetcode",
@@ -71,7 +112,24 @@
       "dailySolved": 0,
       "weeklySolved": 0,
       "weeklyDelta": 0,
-      "totalDelta": 0
+      "totalDelta": 0,
+      "demo": true,
+      "rankDeltaWeek": 0,
+      "rankDeltaMonth": 0
+    },
+    {
+      "username": "tcoz",
+      "totalSolved": 85,
+      "easySolved": 28,
+      "mediumSolved": 48,
+      "hardSolved": 9,
+      "streak": 56,
+      "dailySolved": 0,
+      "weeklySolved": 12,
+      "weeklyDelta": -2,
+      "totalDelta": 0,
+      "rankDeltaWeek": 0,
+      "rankDeltaMonth": 0
     }
   ]
 }
