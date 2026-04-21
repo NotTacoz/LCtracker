@@ -420,37 +420,46 @@
     .footer a:hover { color: var(--muted); }
 
     /* ── Test-mode toggle ────────────────────────────────────── */
-    .btn-test {
+    /* ── Demo toggle (slide switch) ─────────────────────────── */
+    .demo-toggle {
       display: inline-flex;
       align-items: center;
-      gap: 4px;
-      padding: 4px 9px;
-      border: 1px solid var(--border);
-      border-radius: 4px;
-      background: var(--surface);
-      color: var(--faint);
+      gap: 7px;
+      cursor: pointer;
+      user-select: none;
+      flex-shrink: 0;
+    }
+    .demo-toggle input { position: absolute; opacity: 0; width: 0; height: 0; }
+    .toggle-track {
+      width: 30px; height: 17px;
+      border-radius: 17px;
+      background: var(--border-strong);
+      position: relative;
+      transition: background 0.2s;
+      flex-shrink: 0;
+    }
+    .demo-toggle input:checked + .toggle-track { background: var(--muted); }
+    .toggle-thumb {
+      position: absolute;
+      top: 2px; left: 2px;
+      width: 13px; height: 13px;
+      border-radius: 50%;
+      background: #fff;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+      transition: transform 0.2s;
+    }
+    .demo-toggle input:checked + .toggle-track .toggle-thumb {
+      transform: translateX(13px);
+    }
+    .toggle-lbl {
       font-family: 'JetBrains Mono', monospace;
       font-size: 0.68rem;
       letter-spacing: 0.06em;
       text-transform: uppercase;
-      cursor: pointer;
-      transition: color 0.15s, border-color 0.15s, background 0.15s;
-      white-space: nowrap;
-      flex-shrink: 0;
+      color: var(--faint);
+      transition: color 0.15s;
     }
-    .btn-test:hover { color: var(--muted); border-color: var(--border-strong); }
-    .btn-test.active {
-      color: var(--neg);
-      border-color: currentColor;
-      background: rgba(140,43,27,0.05);
-    }
-    .btn-test .dot {
-      width: 6px; height: 6px;
-      border-radius: 50%;
-      background: var(--faint);
-      transition: background 0.15s;
-    }
-    .btn-test.active .dot { background: var(--neg); }
+    .demo-toggle input:checked ~ .toggle-lbl { color: var(--muted); }
 
     .test-banner {
       display: none;
@@ -522,9 +531,11 @@
     <div class="search-wrap">
       <input id="search" type="text" placeholder="Filter by name…" autocomplete="off" spellcheck="false" />
     </div>
-    <button id="btn-test" class="btn-test" title="Hide/show reference accounts">
-      <span class="dot"></span>demo
-    </button>
+    <label class="demo-toggle" title="Show reference / demo accounts">
+      <input type="checkbox" id="toggle-demo" />
+      <span class="toggle-track"><span class="toggle-thumb"></span></span>
+      <span class="toggle-lbl">demo</span>
+    </label>
   </div>
 
   <!-- ── Demo-hidden banner ───────────────────────────────────── -->
@@ -619,7 +630,7 @@ let allUsers  = [];
 let activeTab = 'total';   // 'total' | 'weekly' | 'daily'
 let sortKey   = null;      // null = use tab default
 let sortDir   = -1;        // -1 desc, 1 asc
-let hideDemo  = false;     // when true, filter out users where demo === true
+let hideDemo  = true;      // demo accounts hidden by default; toggle to reveal
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 const el  = id => document.getElementById(id);
@@ -850,9 +861,8 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
 
 el('search').addEventListener('input', () => render());
 
-el('btn-test').addEventListener('click', () => {
-  hideDemo = !hideDemo;
-  el('btn-test').classList.toggle('active', hideDemo);
+el('toggle-demo').addEventListener('change', () => {
+  hideDemo = !el('toggle-demo').checked;
   el('test-banner').classList.toggle('visible', hideDemo);
   const visible = hideDemo ? allUsers.filter(u => !u.demo) : allUsers;
   renderSummary(visible);
@@ -877,6 +887,9 @@ document.addEventListener('keydown', e => {
 });
 
 // ── Boot ──────────────────────────────────────────────────────────────────────
+// Sync initial state: demo hidden by default, checkbox unchecked
+el('toggle-demo').checked = !hideDemo;
+el('test-banner').classList.toggle('visible', hideDemo);
 loadData();
 </script>
 </body>
