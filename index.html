@@ -461,18 +461,6 @@
     }
     .demo-toggle input:checked ~ .toggle-lbl { color: var(--muted); }
 
-    .test-banner {
-      display: none;
-      padding: 7px 12px;
-      border: 1px solid rgba(140,43,27,0.2);
-      border-radius: 4px;
-      background: rgba(140,43,27,0.05);
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.75rem;
-      color: var(--neg);
-      margin-bottom: 14px;
-    }
-    .test-banner.visible { display: block; }
 
     /* ── Rank delta badge ────────────────────────────────────── */
     .td-rank { position: relative; }
@@ -536,11 +524,6 @@
       <span class="toggle-track"><span class="toggle-thumb"></span></span>
       <span class="toggle-lbl">demo</span>
     </label>
-  </div>
-
-  <!-- ── Demo-hidden banner ───────────────────────────────────── -->
-  <div id="test-banner" class="test-banner">
-    Reference accounts hidden — showing crew only
   </div>
 
   <!-- ── Leaderboard ─────────────────────────────────────────── -->
@@ -863,7 +846,6 @@ el('search').addEventListener('input', () => render());
 
 el('toggle-demo').addEventListener('change', () => {
   hideDemo = !el('toggle-demo').checked;
-  el('test-banner').classList.toggle('visible', hideDemo);
   const visible = hideDemo ? allUsers.filter(u => !u.demo) : allUsers;
   renderSummary(visible);
   render();
@@ -887,9 +869,7 @@ document.addEventListener('keydown', e => {
 });
 
 // ── Boot ──────────────────────────────────────────────────────────────────────
-// Sync initial state: demo hidden by default, checkbox unchecked
 el('toggle-demo').checked = !hideDemo;
-el('test-banner').classList.toggle('visible', hideDemo);
 loadData();
 </script>
 </body>
