@@ -25,6 +25,20 @@
       --silver:        #546070;
       --bronze:        #7a4820;
     }
+    :root[data-theme="dark"] {
+      --bg:            #131210;
+      --surface:       #1b1917;
+      --text:          #f1ece6;
+      --muted:         #beb4a8;
+      --faint:         #8c857c;
+      --border:        #2d2924;
+      --border-strong: #3c3731;
+      --pos:           #66c390;
+      --neg:           #e17f71;
+      --gold:          #d2b35b;
+      --silver:        #a3b1c0;
+      --bronze:        #cb8f64;
+    }
 
     /* ── Reset & base ────────────────────────────────────────── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -201,6 +215,7 @@
     tbody tr { border-bottom: 1px solid var(--border); transition: background 0.1s; }
     tbody tr:last-child { border-bottom: none; }
     tbody tr:hover { background: rgba(28, 25, 22, 0.022); }
+    :root[data-theme="dark"] tbody tr:hover { background: rgba(241, 236, 230, 0.04); }
 
     td {
       padding: 12px 14px;
@@ -519,6 +534,11 @@
     <div class="search-wrap">
       <input id="search" type="text" placeholder="Filter by name…" autocomplete="off" spellcheck="false" />
     </div>
+    <label class="demo-toggle" title="Toggle dark mode">
+      <input type="checkbox" id="toggle-theme" />
+      <span class="toggle-track"><span class="toggle-thumb"></span></span>
+      <span class="toggle-lbl">dark</span>
+    </label>
     <label class="demo-toggle" title="Show reference / demo accounts">
       <input type="checkbox" id="toggle-demo" />
       <span class="toggle-track"><span class="toggle-thumb"></span></span>
@@ -602,6 +622,7 @@
 <script>
 // ── Config ────────────────────────────────────────────────────────────────────
 const DATA_URL   = './data.json';
+const THEME_STORAGE_KEY = 'lctracker-theme';
 const ISSUES_URL =
   'https://github.com/NotTacoz/LCtracker/issues/new' +
   '?title=Add+me%3A+YourLCUsername' +
@@ -620,6 +641,18 @@ const el  = id => document.getElementById(id);
 const esc = s  => String(s).replace(/[&<>"']/g,
   c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]));
 const fmt = n  => (n ?? 0).toLocaleString();
+
+function setTheme(theme) {
+  const safeTheme = theme === 'dark' ? 'dark' : 'light';
+  document.documentElement.setAttribute('data-theme', safeTheme);
+  localStorage.setItem(THEME_STORAGE_KEY, safeTheme);
+  el('toggle-theme').checked = safeTheme === 'dark';
+}
+
+function initTheme() {
+  const savedTheme = localStorage.getItem(THEME_STORAGE_KEY);
+  setTheme(savedTheme === 'dark' ? 'dark' : 'light');
+}
 
 function showPanel(name) {
   ['loading', 'error', 'empty', 'table'].forEach(p => {
@@ -851,6 +884,10 @@ el('toggle-demo').addEventListener('change', () => {
   render();
 });
 
+el('toggle-theme').addEventListener('change', () => {
+  setTheme(el('toggle-theme').checked ? 'dark' : 'light');
+});
+
 el('btn-join').addEventListener('click', () => {
   el('modal-issue-link').href = ISSUES_URL;
   el('modal').classList.add('open');
@@ -869,6 +906,7 @@ document.addEventListener('keydown', e => {
 });
 
 // ── Boot ──────────────────────────────────────────────────────────────────────
+initTheme();
 el('toggle-demo').checked = !hideDemo;
 loadData();
 </script>
