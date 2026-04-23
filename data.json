@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-23T03:44:28Z",
+  "lastUpdated": "2026-04-23T03:53:11Z",
   "snapshots": {
     "week": {
       "date": "2026-04-21T04:13:49Z",
@@ -52,7 +52,7 @@
       "dailySolved": 0,
       "weeklySolved": 6,
       "weeklyDelta": 0,
-      "totalDelta": 1,
+      "totalDelta": 0,
       "demo": true,
       "rankDeltaWeek": 0,
       "rankDeltaMonth": 0
@@ -127,7 +127,7 @@
       "dailySolved": 0,
       "weeklySolved": 16,
       "weeklyDelta": 2,
-      "totalDelta": 2,
+      "totalDelta": 0,
       "rankDeltaWeek": 0,
       "rankDeltaMonth": 0
     },
