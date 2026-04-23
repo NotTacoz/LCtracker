@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-22T03:46:57Z",
+  "lastUpdated": "2026-04-23T03:44:28Z",
   "snapshots": {
     "week": {
       "date": "2026-04-21T04:13:49Z",
@@ -44,14 +44,14 @@
     },
     {
       "username": "DBabichev",
-      "totalSolved": 2318,
+      "totalSolved": 2319,
       "easySolved": 504,
-      "mediumSolved": 1231,
+      "mediumSolved": 1232,
       "hardSolved": 583,
       "streak": 49,
       "dailySolved": 0,
       "weeklySolved": 6,
-      "weeklyDelta": -2,
+      "weeklyDelta": 0,
       "totalDelta": 1,
       "demo": true,
       "rankDeltaWeek": 0,
@@ -119,17 +119,31 @@
     },
     {
       "username": "tcoz",
-      "totalSolved": 85,
+      "totalSolved": 87,
       "easySolved": 28,
-      "mediumSolved": 48,
+      "mediumSolved": 50,
       "hardSolved": 9,
       "streak": 56,
       "dailySolved": 0,
-      "weeklySolved": 9,
-      "weeklyDelta": -5,
-      "totalDelta": 0,
+      "weeklySolved": 16,
+      "weeklyDelta": 2,
+      "totalDelta": 2,
       "rankDeltaWeek": 0,
       "rankDeltaMonth": 0
+    },
+    {
+      "username": "n5sOI0EAsN",
+      "totalSolved": 20,
+      "easySolved": 14,
+      "mediumSolved": 6,
+      "hardSolved": 0,
+      "streak": 6,
+      "dailySolved": 0,
+      "weeklySolved": 0,
+      "weeklyDelta": 0,
+      "totalDelta": 0,
+      "rankDeltaWeek": null,
+      "rankDeltaMonth": null
     },
     {
       "username": "neet_code",
