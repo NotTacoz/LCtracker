@@ -1,16 +1,18 @@
 {
-  "lastUpdated": "2026-04-28T04:12:03Z",
+  "lastUpdated": "2026-04-29T04:08:38Z",
   "snapshots": {
     "week": {
-      "date": "2026-04-21T04:13:49Z",
+      "date": "2026-04-29T04:08:38Z",
       "ranks": {
         "votrubac": 1,
         "DBabichev": 2,
         "lee215": 3,
-        "neal_wu": 4,
-        "errichto": 5,
-        "neetcode": 6,
-        "tcoz": 7
+        "leetcodegrindtt": 4,
+        "neal_wu": 5,
+        "errichto": 6,
+        "tcoz": 7,
+        "n5sOI0EAsN": 8,
+        "neet_code": 9
       }
     },
     "month": {
@@ -52,7 +54,7 @@
       "dailySolved": 0,
       "weeklySolved": 6,
       "weeklyDelta": -1,
-      "totalDelta": 1,
+      "totalDelta": 0,
       "demo": true,
       "rankDeltaWeek": 0,
       "rankDeltaMonth": 0
@@ -84,7 +86,7 @@
       "weeklyDelta": 0,
       "totalDelta": 0,
       "demo": true,
-      "rankDeltaWeek": null,
+      "rankDeltaWeek": 0,
       "rankDeltaMonth": null
     },
     {
@@ -99,7 +101,7 @@
       "weeklyDelta": 0,
       "totalDelta": 0,
       "demo": true,
-      "rankDeltaWeek": -1,
+      "rankDeltaWeek": 0,
       "rankDeltaMonth": -1
     },
     {
@@ -114,19 +116,19 @@
       "weeklyDelta": 0,
       "totalDelta": 0,
       "demo": true,
-      "rankDeltaWeek": -1,
+      "rankDeltaWeek": 0,
       "rankDeltaMonth": -1
     },
     {
       "username": "tcoz",
-      "totalSolved": 92,
+      "totalSolved": 93,
       "easySolved": 29,
-      "mediumSolved": 54,
+      "mediumSolved": 55,
       "hardSolved": 9,
       "streak": 56,
       "dailySolved": 0,
-      "weeklySolved": 29,
-      "weeklyDelta": 14,
+      "weeklySolved": 27,
+      "weeklyDelta": 11,
       "totalDelta": 1,
       "rankDeltaWeek": 0,
       "rankDeltaMonth": 0
@@ -142,7 +144,7 @@
       "weeklySolved": 0,
       "weeklyDelta": 0,
       "totalDelta": 0,
-      "rankDeltaWeek": null,
+      "rankDeltaWeek": 0,
       "rankDeltaMonth": null
     },
     {
@@ -157,7 +159,7 @@
       "weeklyDelta": 0,
       "totalDelta": 0,
       "demo": true,
-      "rankDeltaWeek": null,
+      "rankDeltaWeek": 0,
       "rankDeltaMonth": null
     }
   ]
