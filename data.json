@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-04T04:27:02Z",
+  "lastUpdated": "2026-05-05T03:55:56Z",
   "snapshots": {
     "week": {
       "date": "2026-04-29T04:08:38Z",
@@ -67,8 +67,8 @@
       "hardSolved": 138,
       "streak": 2,
       "dailySolved": 0,
-      "weeklySolved": 3,
-      "weeklyDelta": 0,
+      "weeklySolved": 4,
+      "weeklyDelta": 1,
       "totalDelta": 0,
       "demo": true,
       "rankDeltaWeek": 0,
@@ -127,9 +127,9 @@
       "hardSolved": 9,
       "streak": 56,
       "dailySolved": 0,
-      "weeklySolved": 29,
-      "weeklyDelta": -3,
-      "totalDelta": 1,
+      "weeklySolved": 24,
+      "weeklyDelta": -10,
+      "totalDelta": 0,
       "rankDeltaWeek": 0,
       "rankDeltaMonth": 0
     },
