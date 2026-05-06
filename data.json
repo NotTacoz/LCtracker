@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-05-05T03:55:56Z",
+  "lastUpdated": "2026-05-06T04:11:58Z",
   "snapshots": {
     "week": {
-      "date": "2026-04-29T04:08:38Z",
+      "date": "2026-05-06T04:11:58Z",
       "ranks": {
         "votrubac": 1,
         "DBabichev": 2,
@@ -127,8 +127,8 @@
       "hardSolved": 9,
       "streak": 56,
       "dailySolved": 0,
-      "weeklySolved": 24,
-      "weeklyDelta": -10,
+      "weeklySolved": 17,
+      "weeklyDelta": -17,
       "totalDelta": 0,
       "rankDeltaWeek": 0,
       "rankDeltaMonth": 0
