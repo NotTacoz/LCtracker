@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-11T04:42:50Z",
+  "lastUpdated": "2026-05-12T04:13:21Z",
   "snapshots": {
     "week": {
       "date": "2026-05-06T04:11:58Z",
@@ -46,8 +46,8 @@
     },
     {
       "username": "DBabichev",
-      "totalSolved": 2329,
-      "easySolved": 505,
+      "totalSolved": 2330,
+      "easySolved": 506,
       "mediumSolved": 1239,
       "hardSolved": 585,
       "streak": 49,
@@ -121,15 +121,15 @@
     },
     {
       "username": "tcoz",
-      "totalSolved": 100,
+      "totalSolved": 101,
       "easySolved": 30,
-      "mediumSolved": 61,
+      "mediumSolved": 62,
       "hardSolved": 9,
       "streak": 56,
-      "dailySolved": 7,
-      "weeklySolved": 12,
-      "weeklyDelta": -17,
-      "totalDelta": 2,
+      "dailySolved": 0,
+      "weeklySolved": 13,
+      "weeklyDelta": -11,
+      "totalDelta": 1,
       "rankDeltaWeek": 0,
       "rankDeltaMonth": 0
     },
