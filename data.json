@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-05-12T04:13:21Z",
+  "lastUpdated": "2026-05-13T04:28:23Z",
   "snapshots": {
     "week": {
-      "date": "2026-05-06T04:11:58Z",
+      "date": "2026-05-13T04:28:23Z",
       "ranks": {
         "votrubac": 1,
         "DBabichev": 2,
@@ -52,9 +52,9 @@
       "hardSolved": 585,
       "streak": 49,
       "dailySolved": 0,
-      "weeklySolved": 8,
-      "weeklyDelta": 0,
-      "totalDelta": 1,
+      "weeklySolved": 6,
+      "weeklyDelta": -4,
+      "totalDelta": 0,
       "demo": true,
       "rankDeltaWeek": 0,
       "rankDeltaMonth": 0
@@ -127,9 +127,9 @@
       "hardSolved": 9,
       "streak": 56,
       "dailySolved": 0,
-      "weeklySolved": 13,
-      "weeklyDelta": -11,
-      "totalDelta": 1,
+      "weeklySolved": 14,
+      "weeklyDelta": -3,
+      "totalDelta": 0,
       "rankDeltaWeek": 0,
       "rankDeltaMonth": 0
     },
