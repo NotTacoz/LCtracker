@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-13T04:28:23Z",
+  "lastUpdated": "2026-05-14T04:27:53Z",
   "snapshots": {
     "week": {
       "date": "2026-05-13T04:28:23Z",
@@ -121,15 +121,15 @@
     },
     {
       "username": "tcoz",
-      "totalSolved": 101,
+      "totalSolved": 102,
       "easySolved": 30,
-      "mediumSolved": 62,
+      "mediumSolved": 63,
       "hardSolved": 9,
       "streak": 56,
       "dailySolved": 0,
-      "weeklySolved": 14,
-      "weeklyDelta": -3,
-      "totalDelta": 0,
+      "weeklySolved": 17,
+      "weeklyDelta": 5,
+      "totalDelta": 1,
       "rankDeltaWeek": 0,
       "rankDeltaMonth": 0
     },
